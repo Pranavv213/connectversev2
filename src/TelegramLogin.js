@@ -15,13 +15,17 @@ const TelegramLogin = () => {
 
   const onTelegramAuth = (user) => {
     
-    alert(`Logged in as ${user.first_name} ${user.last_name} (${user.id}${user.username ? ', @' + user.username : ''})`);
+   
     
     // Change the button text after successful authentication
     const buttonElement = document.querySelector('.telegram-login-button'); // Update this selector based on actual button class or ID
-    if (buttonElement) {
-      buttonElement.innerText = 'Logged in as @'+user.username;
-    }
+    localStorage.setItem('telegram_username',user.username)
+    buttonElement.innerText = 'Logged in as @'+user.username;
+    window.location()
+   
+   
+    
+  
     
    
   };
