@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './images/logo.avif'
 import homeimg from './images/homeimg.png'
@@ -34,17 +35,21 @@ function Home() {
   return (
     <div>
   
-       <Navbar bg="dark" data-bs-theme="dark" fixed='top'>
-        <Container>
-          <Navbar.Brand href="#home"><img style={{width:'10em'}} src={logo}></img></Navbar.Brand>
+
+      <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-tertiary" fixed='top'>
+      <Container>
+      <Navbar.Brand href="#home"><img style={{width:'10em'}} src={logo}></img></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#events">Events</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
-        </Container>
-      </Navbar>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
       <div className="video-container">
         <div id="home"></div>
