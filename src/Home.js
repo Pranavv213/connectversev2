@@ -20,11 +20,15 @@ import aboutusimg from './images/aboutusimg.mp4'
 import aboutus from './images/aboutus.png'
 import aboutvideo from './images/aboutvideo.mp4'
 import contact from './images/contact.mp4'
-import { createWeb3Modal, defaultConfig } from '@web3modal/ethers/react'
+import { ethers } from 'ethers';
+import { signInWithGoogle } from "./firebase-config";
+import TelegramLogin from './TelegramLogin';
 
 
 
 function Home() {
+
+    const [account,setAccount]=useState('Connect Wallet')
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
@@ -33,43 +37,6 @@ function Home() {
   
     const projectId = 'd1b8ecd12b45222ded58ecacaf0afcce'
 
-// 2. Set chains
-const mainnet = {
-  chainId: 1,
-  name: 'Ethereum',
-  currency: 'ETH',
-  explorerUrl: 'https://etherscan.io',
-  rpcUrl: 'https://cloudflare-eth.com'
-}
-
-// 3. Create a metadata object
-const metadata = {
-  name: 'ConnectVerse',
-  description: 'My Website description',
-  url: 'http://localhost:3000/', // origin must match your domain & subdomain
-  icons: ['https://avatars.mywebsite.com/']
-}
-
-// 4. Create Ethers config
-const ethersConfig = defaultConfig({
-  /*Required*/
-  metadata,
-
-  /*Optional*/
-  enableEIP6963: true, // true by default
-  enableInjected: true, // true by default
-  enableCoinbase: true, // true by default
-  rpcUrl: '...', // used for the Coinbase SDK
-  defaultChainId: 1 // used for the Coinbase SDK
-})
-
-// 5. Create a AppKit instance
-createWeb3Modal({
-  ethersConfig,
-  chains: [mainnet],
-  projectId,
-  enableAnalytics: true // Optional - defaults to your Cloud configuration
-})
 
 
   return (
@@ -85,7 +52,45 @@ createWeb3Modal({
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#events">Events</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
-            <w3m-button />
+
+            <Nav.Link>
+
+            <button className='button-21' style={{width:'8em',height:'2em'}} onClick={
+              
+              
+              
+              
+              async()=>{
+                try{
+                  const accounts = await window.ethereum.request({
+                    method: "eth_requestAccounts",
+                   });
+                   const provider = new ethers.providers.Web3Provider(window.ethereum)
+                   setAccount(accounts[0].substring(0, 4)+'....'+accounts[0].substring(accounts[0].length - 4))
+                   localStorage.setItem('account',accounts[0])
+                   window.location()
+
+                }
+                catch(err){
+                  if(!window.ethereum)
+                  window.location.href='https://metamask.io/'
+               
+                }
+
+
+
+         }
+         
+         
+         }>{localStorage.getItem('account')!=undefined?localStorage.getItem('account').substring(0, 4)+'....'+localStorage.getItem('account').substring(localStorage.getItem('account').length - 4):account}</button>
+
+
+
+            </Nav.Link>
+            <Nav.Link>
+<TelegramLogin/>
+            </Nav.Link>
+      
           </Nav>
         </Navbar.Collapse>
       </Container>
