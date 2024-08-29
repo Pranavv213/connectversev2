@@ -43,7 +43,6 @@ function Home() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#events">Events</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
@@ -142,23 +141,7 @@ function Home() {
       </div>
     </div>
 
-    <div className="video-container" style={{backgroundColor:'black'}}>
-      
-      <div className="content" style={{color:'white'}}>
-  
-  <h1>About Us</h1>
-  What we do ?
-  <div id='about'></div>
-  <br></br>
-  <br></br>
-  <video autoPlay loop muted playsInline className="aboutusimg">
-        <source src={aboutvideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <br></br>  <br></br>  <br></br>  <br></br> <br></br>  <br></br>  <br></br>  <br></br> <br></br>  <br></br>  <br></br>  <br></br> <br></br>  <br></br>  <br></br>  <br></br> <br></br>  <br></br>  
-      </div>
-    </div>
-
+    
     <div className="video-container">
       <video autoPlay loop muted playsInline className="background-video">
         <source src={contact} type="video/mp4" />
