@@ -1,4 +1,14 @@
 import React, { useEffect } from 'react';
+import { db } from "./firebase-config.js";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
+const userCollection = collection(db, "user2");
 
 const TelegramLogin = () => {
   useEffect(() => {
@@ -13,7 +23,7 @@ const TelegramLogin = () => {
     document.getElementById('telegram-login').appendChild(script);
   }, []);
 
-  const onTelegramAuth = (user) => {
+  const onTelegramAuth = async (user) => {
     
    
     
@@ -21,8 +31,7 @@ const TelegramLogin = () => {
     const buttonElement = document.querySelector('.telegram-login-button'); // Update this selector based on actual button class or ID
     localStorage.setItem('telegram_username',user.username)
     buttonElement.innerText = 'Logged in as @'+user.username;
-    window.location()
-   
+    await addDoc(userCollection,{username:user.username});
    
     
   
