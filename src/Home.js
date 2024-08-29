@@ -113,7 +113,7 @@ function Home() {
 
 <a href='https://t.me/connectverseweb3'><button class="button-85" role="button">Join Community</button></a>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-<h1> Some of our Past Events</h1>
+
 
   {/* Carousal */}
 
@@ -126,7 +126,8 @@ function Home() {
       
       {/* Other content can go here */}
       <div className="content">
-   
+      <h1> Some of our Past Events</h1>
+      <br></br>
       <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
       <img src={irl1}></img>
@@ -180,7 +181,7 @@ function Home() {
   
  
 
-  <h1>Some of Our Partners</h1>
+  <h1>Trusted By</h1>
   We are proud to collaborate with our esteemed partners.
   <br></br>
   <br></br>
@@ -204,17 +205,10 @@ function Home() {
     <div id='contact'></div>
     <a href='https://forms.gle/cvTuZig8Fy6m4caP6'><button class="button-56" role="button">Contact Us</button></a>
 
-<br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
-  <br></br><br></br>
- <img src={logo}></img>
-  <h5>@2024 All Rights Reserved</h5>
+
+
+
+
 </center>
 
 
@@ -222,7 +216,14 @@ function Home() {
 
       </div>
     </div>
-   
+    <center style={{backgroundColor:'black'}}> <img style={{width:'15em'}} src={logo}></img>
+    <h5>@2024 All Rights Reserved</h5>
+    <br></br><br></br>
+  
+
+    
+    </center>
+
       </div>
    
   )
