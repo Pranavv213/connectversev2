@@ -20,7 +20,7 @@ import aboutusimg from './images/aboutusimg.mp4'
 import aboutus from './images/aboutus.png'
 import aboutvideo from './images/aboutvideo.mp4'
 import contact from './images/contact.mp4'
-
+import { createWeb3Modal, defaultConfig } from '@web3modal/ethers/react'
 
 
 
@@ -31,6 +31,46 @@ function Home() {
       setIndex(selectedIndex);
     };
   
+    const projectId = 'd1b8ecd12b45222ded58ecacaf0afcce'
+
+// 2. Set chains
+const mainnet = {
+  chainId: 1,
+  name: 'Ethereum',
+  currency: 'ETH',
+  explorerUrl: 'https://etherscan.io',
+  rpcUrl: 'https://cloudflare-eth.com'
+}
+
+// 3. Create a metadata object
+const metadata = {
+  name: 'ConnectVerse',
+  description: 'My Website description',
+  url: 'http://localhost:3000/', // origin must match your domain & subdomain
+  icons: ['https://avatars.mywebsite.com/']
+}
+
+// 4. Create Ethers config
+const ethersConfig = defaultConfig({
+  /*Required*/
+  metadata,
+
+  /*Optional*/
+  enableEIP6963: true, // true by default
+  enableInjected: true, // true by default
+  enableCoinbase: true, // true by default
+  rpcUrl: '...', // used for the Coinbase SDK
+  defaultChainId: 1 // used for the Coinbase SDK
+})
+
+// 5. Create a AppKit instance
+createWeb3Modal({
+  ethersConfig,
+  chains: [mainnet],
+  projectId,
+  enableAnalytics: true // Optional - defaults to your Cloud configuration
+})
+
 
   return (
     <div>
@@ -45,6 +85,7 @@ function Home() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#events">Events</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
+            <w3m-button />
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -142,11 +183,8 @@ function Home() {
     </div>
 
     
-    <div className="video-container">
-      <video autoPlay loop muted playsInline className="background-video">
-        <source src={contact} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className="video-container" style={{backgroundColor:'black'}}>
+      
       {/* Other content can go here */}
       <div className="content">
   
