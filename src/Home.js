@@ -59,7 +59,7 @@ function Home() {
   <br/>
 
 
-<button class="button-85" role="button">Join Community</button>
+<a href='https://t.me/connectverseweb3'><button class="button-85" role="button">Join Community</button></a>
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <h1> Some of our Past Events</h1>
 
