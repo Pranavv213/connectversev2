@@ -27,10 +27,8 @@ const TelegramLogin = () => {
     
    
     
-    // Change the button text after successful authentication
-    const buttonElement = document.querySelector('.telegram-login-button'); // Update this selector based on actual button class or ID
-    localStorage.setItem('telegram_username',user.username)
-    buttonElement.innerText = 'Logged in as @'+user.username;
+    
+  
     await addDoc(userCollection,{username:user.username});
    
     
