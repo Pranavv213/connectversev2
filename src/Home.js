@@ -23,9 +23,13 @@ import contact from './images/contact.mp4'
 import { ethers } from 'ethers';
 import { signInWithGoogle } from "./firebase-config";
 import TelegramLogin from './TelegramLogin';
-
-
-
+import ChromeDinoGame from 'react-chrome-dino';
+import Marquee from "react-fast-marquee";
+import partnersimage from './images/partnersimage.png'
+import partnersimage2 from './images/partnersimage2.png'
+import { XEmbed } from 'react-social-media-embed';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { SocialIcon } from 'react-social-icons'
 
 
 function Home() {
@@ -126,7 +130,10 @@ function Home() {
       
       {/* Other content can go here */}
       <div className="content">
+      <ScrollAnimation animateIn='flipInY'
+  animateOut='flipOutY'>
       <h1> Some of our Past Events</h1>
+      </ScrollAnimation>
       <br></br>
       <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
@@ -173,25 +180,34 @@ function Home() {
  
       </div>
     </div>
-   
+    <div  style={{backgroundColor:'black'}}>
+
+   <br></br><br></br><br></br><br></br>
+   </div>
     <div  style={{backgroundColor:'black'}}>
       
       {/* Other content can go here */}
       <div className="content">
   
- 
+  <ScrollAnimation  animateIn='flipInY'
+  animateOut='flipOutY'>  <h1>Trusted By</h1>
+  We are proud to collaborate with our esteemed partners.</ScrollAnimation>
 
-  <h1>Trusted By</h1>
-  We are proud to collaborate with our esteemed partners.
   <br></br>
+  
   <br></br>
-<img className="partnerimg" src={partners}></img>
- 
+ <Marquee>
+<img className="partnerimg" style={{width:'70em'}} src={partnersimage}></img>
+<img className="partnerimg" style={{width:'70em'}} src={partnersimage2}></img>
+</Marquee>
+ <br></br><br></br>
+ <div id='contact'></div>
+<a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
+<br></br><br></br>
       </div>
     </div>
 
-    
-    <div className="video-container" style={{backgroundColor:'black'}}>
+    <div  style={{backgroundColor:'black'}}>
       
       {/* Other content can go here */}
       <div className="content">
@@ -201,28 +217,96 @@ function Home() {
   <br></br>
   <br></br>
 
-<center>
-    <div id='contact'></div>
-    <a href='https://forms.gle/cvTuZig8Fy6m4caP6'><button class="button-56" role="button">Contact Us</button></a>
-
-
-
-
-
-</center>
 
 
 
 
       </div>
     </div>
-    <center style={{backgroundColor:'black'}}> <img style={{width:'15em'}} src={logo}></img>
-    <h5>@2024 All Rights Reserved</h5>
-    <br></br><br></br>
-  
+ 
+    <div class="tweets"  style={{backgroundColor:'black'}}>
+    <div style={{backgroundColor:'black',color:'white',paddingRight:'2em'}}>
+    <ScrollAnimation  animateIn='flipInY'
+  animateOut='flipOutY'>  <h1>Testimonials</h1>
+  Check out some of the buzz on Twitter about the events we've hosted! 🥳
+ </ScrollAnimation>
+ </div>
+<br></br>
+<ScrollAnimation duration={3}
+ animateIn='flipInY'
+ animateOut='flipOutY'>
+      <div style={{ display: 'flex', justifyContent: 'center' ,paddingRight:'2em'}}>
+  <XEmbed url="https://x.com/ConnectVerse3/status/1772979373919932796" width={325} />
+</div>
+    </ScrollAnimation>
+    <ScrollAnimation duration={3}
+ animateIn='flipInY'
+ animateOut='flipOutY'>
+<div style={{ display: 'flex', justifyContent: 'center' ,paddingRight:'2em'}}>
+  <XEmbed url="https://x.com/SuperRabbitsDAO/status/1767123410407342332" width={325} />
+</div>
+</ScrollAnimation>
+<ScrollAnimation duration={3}
+ animateIn='flipInY'
+ animateOut='flipOutY'>
+<div style={{ display: 'flex', justifyContent: 'center' ,paddingRight:'2em'}}>
+  <XEmbed url="https://x.com/qoneqtapp/status/1762155926541504607" width={325} />
+</div>
+</ScrollAnimation>
+<ScrollAnimation duration={3}
+ animateIn='flipInY'
+ animateOut='flipOutY'>
+<div style={{ display: 'flex', justifyContent: 'center' ,paddingRight:'2em'}}>
+  <XEmbed url="https://x.com/TheGraphIndia/status/1719741164134482123" width={325} />
+</div>
+</ScrollAnimation>
+<ScrollAnimation duration={3}
+ animateIn='flipInY'
+ animateOut='flipOutY'>
+<div style={{ display: 'flex', justifyContent: 'center' ,paddingRight:'2em'}}>
+  <XEmbed url="https://x.com/TheGraphIndia/status/1718459249939152934" width={325} />
+</div>
+</ScrollAnimation>
 
-    
-    </center>
+</div>
+
+   
+    <center>
+   
+<div style={{backgroundColor:'black'}}> 
+<br></br> <br></br> <br></br> <br></br>
+    <iframe
+src="https://www.chatbase.co/chatbot-iframe/dKPjWH2ngM-yLWxO0iOb4"
+width="100%"
+style={{height:'100%',minHeight:'700px'}}
+frameborder="0"
+></iframe>
+<br></br>
+<br></br><br></br><br></br><br></br>
+
+<br></br><br></br><br></br><br></br>
+<div style={{color:'white'}}>
+Find Us On
+<br></br><br></br><br></br>
+<SocialIcon url="https://x.com/connectverse3" />
+&nbsp;&nbsp;&nbsp;
+<SocialIcon url="https://www.youtube.com/channel/UCXFScMQoAZCphx44xk0u27Q"/>
+&nbsp;&nbsp;&nbsp;
+<SocialIcon url="https://in.linkedin.com/company/connect-verse"/>
+&nbsp;&nbsp;&nbsp;
+<SocialIcon url="https://t.me/connectverseweb3"/>
+&nbsp;&nbsp;&nbsp;
+<SocialIcon url="https://www.instagram.com/connectverse.tech/"/>
+<br></br><br></br><br></br><br></br>
+<img style={{width:'15em'}} src={logo}></img>
+&nbsp;
+All Rights Reserved
+<br></br>
+<br></br>
+<div></div>
+</div>
+</div>
+</center>
 
       </div>
    

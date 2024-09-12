@@ -338,3 +338,11 @@
     cursor: not-allowed;
   }
 }
+
+.tweets{
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}

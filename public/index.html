@@ -9,6 +9,9 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+  
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link
   rel="stylesheet"
@@ -16,6 +19,8 @@
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
   crossorigin="anonymous"
 />
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -34,6 +39,18 @@
   </head>
   <body >
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "dKPjWH2ngM-yLWxO0iOb4",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="dKPjWH2ngM-yLWxO0iOb4"
+      domain="www.chatbase.co"
+      defer>
+      </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
