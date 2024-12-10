@@ -220,7 +220,7 @@ function Home() {
                         .typeString("20,000+ Developers Onboarded")
                         .pauseFor(200)
                         .deleteAll()
-                        .typeString("50+ Happy Cleints")
+                        .typeString("50+ Happy Clients")
                         .start();
                 }}
                 options={{
