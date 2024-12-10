@@ -284,7 +284,7 @@ function Home() {
 <br></br>
   
   <div class="pricing" style={{color:'white'}}>
-<div class="glass" style={{width:'20em',height:'28em', border: "1px solid white"}}>
+<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
 
 <div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
 <h3>Basic</h3>
@@ -311,7 +311,7 @@ function Home() {
 </div>
 
 &nbsp;&nbsp;
-<div class="glass" style={{width:'20em',height:'28em', border: "1px solid white"}}>
+<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
 
 <div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
 <h3>Basic</h3>
@@ -337,7 +337,7 @@ function Home() {
 <a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
 </div>
 &nbsp;&nbsp;
-<div class="glass" style={{width:'20em',height:'28em', border: "1px solid white"}}>
+<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
 
 <div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
 <h3>Basic</h3>
