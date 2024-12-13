@@ -190,13 +190,13 @@ function Home() {
             <div class="slider-items">
                 <img src={icp}
                     alt="" />
-                <img style={{width:'15em'}} src={router}
+                <img style={{width:'20em'}} src={router}
                     alt="" />
                 <img src={bharatbox}
                     alt="" />
                 <img src={qoneqt}
                     alt="" />
-                <img style={{width:'5em'}} src={graph}
+                <img style={{width:'10em'}} src={graph}
                     alt="" />
                 <img style={{width:'15em'}} src={coinstore} alt=""/>
                 <img src={polygon}
