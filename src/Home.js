@@ -16,6 +16,9 @@ import irl3 from './images/irl3.avif'
 import irl4 from './images/irl4.avif'
 import irl5 from './images/irl5.avif'
 import irl6 from './images/irl6.avif'
+import one from './images/one.png'
+import two from './images/two.png'
+import three from './images/three.png'
 import partners from './images/partners.png'
 import aboutusimg from './images/aboutusimg.mp4'
 import aboutus from './images/aboutus.png'
@@ -123,7 +126,7 @@ function Home() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
- <br></br>
+
  <div class="homepage">
  
     {/* <video
@@ -136,15 +139,26 @@ function Home() {
       >
         Your browser does not support the video tag.
       </video> */}
-      <img src={homeimage} class="homeimg"></img>
-  
+      <div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZKopszqI/my0D_gy2BaBz6E9ysJyhAQ/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
+
+    
+ 
    
     
-      <a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
+      <a style={{width:'100%',height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Book a Call</button></a>
      
 <br></br>
      
     <br></br>
+  
+
 
     
       {/* Other content can go here */}
@@ -233,136 +247,65 @@ function Home() {
             />
             </h2>
             </div>
-<br></br>
-<Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-      <img style={{width:'90%'}} src={irl1}></img>
-        <Carousel.Caption>
-        
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img style={{width:'90%'}}src={irl2}></img>
-        <Carousel.Caption>
-      
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img style={{width:'90%'}} src={irl3}></img>
-        <Carousel.Caption>
-       
-        </Carousel.Caption>
-      </Carousel.Item>
 
-      <Carousel.Item>
-      <img style={{width:'90%'}} src={irl4}></img>
-        <Carousel.Caption>
-     
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img style={{width:'90%'}} src={irl5}></img>
-      <Carousel.Caption>
+            <div>
     
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img style={{width:'90%'}} src={irl6}></img>
-        <Carousel.Caption>
-      
-        </Carousel.Caption>
-      </Carousel.Item>
-      
-    </Carousel>
+    </div>
+
+    <div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZKkfLxQg/E8PFIqq6YsYiFL0Gm_PemA/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
+    <div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZLHsZlRE/EmtuktET9ZqCjonHTMyt2g/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
+    <div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZLNMObBw/jOrsC-04O2VQc37VRhdlzg/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
+<br></br>
+
 
  <br></br><br></br>
  <h2 style={{color:'white'}}> Automate your onboarding process with ConnectVerse</h2>
 <img style={{width:'20em'}} src={ai}></img>
 <br></br>
-<div id="pricing"></div>
-<h2 style={{color:'white'}}> Pricing</h2>
-<br></br>
-  
-  <div class="pricing" style={{color:'white'}}>
-<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
+<div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZLAxS6oA/eZn2aw_qxLioqnyrIkK3Sw/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
 
-<div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
-<h3>Basic</h3>
-</div>
-<div class="pricing-content" style={{height:'20em'}}>
-<div class="pricing-body">
-
-
-<br/>
-<h3>$3800</h3>
-<br/>
-  <h5>Workshop duration of 50 mins </h5>
-  <br/>
-  <h5>IRL Workshop in 25 Colleges </h5>
-  <br/>
-  <h5>Interact with over 2000 students </h5>
-  
+    <div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src=" https://www.canva.com/design/DAGZLLrG4aI/xebTTAC7d6rrcHL00006LA/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
 
 
 
-</div>
-</div>
-<a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
-</div>
-
-&nbsp;&nbsp;
-<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
-
-<div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
-<h3>Basic</h3>
-</div>
-<div class="pricing-content" style={{height:'20em'}}>
-<div class="pricing-body">
+   
 
 
-<br/>
-<h3>$3800</h3>
-<br/>
-  <h5>Workshop duration of 50 mins </h5>
-  <br/>
-  <h5>IRL Workshop in 25 Colleges </h5>
-  <br/>
-  <h5>Interact with over 2000 students </h5>
-  
-
-
-
-</div>
-</div>
-<a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
-</div>
-&nbsp;&nbsp;
-<div class="glass" style={{width:'20em',height:'30em', border: "1px solid white"}}>
-
-<div class="pricing-header" style={{width:'100%',height:'5em',backgroundColor:'#8c52ff'}}>
-<h3>Basic</h3>
-</div>
-<div class="pricing-content" style={{height:'20em'}}>
-<div class="pricing-body">
-
-
-<br/>
-<h3>$3800</h3>
-<br/>
-  <h5>Workshop duration of 50 mins </h5>
-  <br/>
-  <h5>IRL Workshop in 25 Colleges </h5>
-  <br/>
-  <h5>Interact with over 2000 students </h5>
-  
-
-
-
-</div>
-</div>
-<a href='https://calendly.com/quantumworld394/30min'><button class="button-85" role="button">Book a Call</button></a>
-</div>
-</div>
  </div>
  
     
