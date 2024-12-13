@@ -897,3 +897,34 @@ border: 1px solid rgba(255, 255, 255, 0.51);
     padding-top: 110%; /* Adjust aspect ratio for very small mobile devices */
   }
 }
+
+
+.custom-accordion {
+  background-color: black;
+}
+
+.custom-accordion-item {
+  background-color: black;
+  color: white; /* Optional: Change text color to make it readable */
+}
+
+.custom-accordion-item .accordion-button {
+  color: white; /* Button text color */
+  background-color: black; /* Button background color */
+  border-color: white; /* Button border color (optional) */
+}
+
+/* Override the arrow icon color */
+.custom-accordion-item .accordion-button::after {
+  color: white !important; /* Force the arrow to be white */
+  border-color: white !important; /* Change arrow border color */
+}
+
+/* Optional: Change active button background color */
+.custom-accordion-item .accordion-button:not(.collapsed) {
+  background-color: #333;
+}
+
+.custom-accordion-item .accordion-button:not(.collapsed)::after {
+  color: white !important; /* Keep arrow white when expanded */
+}

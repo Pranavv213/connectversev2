@@ -52,7 +52,8 @@ import ai from './images/ai.gif'
 import homeimage from './images/homeimage.gif'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Accordion from 'react-bootstrap/Accordion';
+import AIAgent from './images/AIAgent.png'
 
 function Home() {
 
@@ -292,6 +293,8 @@ function Home() {
       ></iframe>
     </div>
 
+    <a style={{width:'100%',height:'70%'}} href='https://t.me/connectverseweb3'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
+
     <div className="canva-embed-container">
       <iframe
         loading="lazy"
@@ -303,38 +306,73 @@ function Home() {
 
 
 
-   
+    <a style={{width:'100%',height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
+     
 
 
  </div>
  
     
-
+ 
    
     <center>
 
       <br/><br></br>
+      <h1 style={{color:'white'}}>FAQ</h1>
+      <br></br>
+      <Accordion defaultActiveKey="0" className="custom-accordion">
+  <Accordion.Item eventKey="0" className="custom-accordion-item">
+    <Accordion.Header>How can ConnectVerse help my Web 3.0 brand? </Accordion.Header>
+    <Accordion.Body>
+    ConnectVerse specializes in onboarding developers and users to your ecosystem through immersive events like bootcamps, workshops, and hacker houses. We provide a tailored approach to engage and grow your community, ensuring your brand is positioned for success in the decentralized ecosystem.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1" className="custom-accordion-item">
+    <Accordion.Header>How can ConnectVerse help onboard developers to my Web 3.0 project?</Accordion.Header>
+    <Accordion.Body>
+    Through our targeted bootcamps and workshops, we help developers understand the technical aspects of your project, providing them with the necessary tools and knowledge to contribute to your ecosystem. We also host hands-on sessions where they can build real-world solutions using your technology.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1" className="custom-accordion-item">
+    <Accordion.Header>What types of events does ConnectVerse organize for Web 3.0 brands?</Accordion.Header>
+    <Accordion.Body>
+    We organize bootcamps, workshops, hackathons, and hacker houses to help your brand connect with developers, users, and influencers. These events are designed to boost community engagement, showcase your project’s technology, and attract new users or developers to your ecosystem.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1" className="custom-accordion-item">
+    <Accordion.Header>Can ConnectVerse help with user acquisition for my platform?</Accordion.Header>
+    <Accordion.Body>
+    Yes, we help attract and onboard users to your platform by organizing educational and engaging events that introduce them to the benefits of your Web 3.0 ecosystem. These events increase awareness and create a community of active users who are invested in your project’s success.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1" className="custom-accordion-item">
+    <Accordion.Header>Can ConnectVerse help us with community building and engagement?</Accordion.Header>
+    <Accordion.Body>
+    Absolutely! Community building is a core part of what we do. Through consistent engagement, hands-on learning opportunities, and community-centric events, we help your brand establish a loyal and active user base. Our events also encourage networking and collaboration, creating a thriving ecosystem for your project.
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
+<br></br>
+<div className="canva-embed-container">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAGZLmgoPXY/63yAKonNcVfbHZvirGI9lQ/view?embed"
+        allowFullScreen
+        allow="fullscreen"
+      ></iframe>
+    </div>
+
+
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/dKPjWH2ngM-yLWxO0iOb4"
+width="100%"
+style={{height: '100%', minHeight: '700px'}}
+frameborder="0"
+></iframe>
       <div id="contact"></div>
  
 <div style={{backgroundColor:'black'}}> 
-<h2 style={{color:'white'}}>Contact</h2>  
-<br></br>
-<center>
 
-  <br/>
-  <input style={{width:'40%',height:'3em'}} placeholder="Enter Name"></input>
-  <br/>
-  <br/>
-  <input style={{width:'40%',height:'3em'}} placeholder="Enter Company Name"></input>
-  <br/>
-  <br/>
-  <textArea style={{width:'40%',height:'10em'}} placeholder="Description"></textArea>
-  <br/>
-  <br></br>
-  <button style={{width:'40%',height:'3em'}} class="button-85" onClick={()=>{
-    notify1()
-  }}>Submit</button>
-</center>
 <br></br>
 
 <br></br><br></br><br></br><br></br>
