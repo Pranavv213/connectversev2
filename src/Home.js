@@ -87,8 +87,8 @@ function Home() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link href="#partner">Become a Partner</Nav.Link>
 
             <Nav.Link>
 
@@ -263,10 +263,11 @@ function Home() {
  <h2 style={{color:'white'}}> Automate your onboarding process with ConnectVerse</h2>
 <img style={{width:'20em'}} src={ai}></img>
 <br></br>
+<div id="about"></div>
 <img src={about} style={{width:'100%'}}></img>
 
     <a style={{width:'100%',height:'70%'}} href='https://t.me/connectverseweb3'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
-
+<div id="partner"></div>
     <div className="canva-embed-container">
       <iframe
         loading="lazy"
