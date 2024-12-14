@@ -60,6 +60,7 @@ import Carousal3 from './images/Carousal3.png';
 import team from './images/team.png'
 import testimonials from './images/testimonials.png'
 
+
 function Home() {
 
     const [account,setAccount]=useState('Connect Wallet')
@@ -71,7 +72,7 @@ function Home() {
   
     const projectId = 'd1b8ecd12b45222ded58ecacaf0afcce'
 
-    const notify = () => toast("Email copid to clipboard !");
+    const notify = () => toast("Email copied to clipboard !");
     const notify1 = () => toast("Submitted. We will reach out to you soon !");
 
 
@@ -91,6 +92,7 @@ function Home() {
             <Nav.Link href="#partner">Become a Partner</Nav.Link>
 
             <Nav.Link>
+            
 
             <button className='button-21' style={{width:'8em',height:'2em'}} onClick={
               
@@ -148,14 +150,14 @@ function Home() {
       <img src={homeimage} style={{width:'100%'}}></img>
 
     
- 
+      <center>
    
     
-      <a style={{width:'100%',height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Book a Call</button></a>
-     
+      <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{ height:'70%'}} class="button-85" role="button">Book a Call</button></a>
+      </center>
 <br></br>
      
-    <br></br>
+    <br></br><br></br>
   
 
 
@@ -266,7 +268,7 @@ function Home() {
 <div id="about"></div>
 <img src={about} style={{width:'100%'}}></img>
 
-    <a style={{width:'100%',height:'70%'}} href='https://t.me/connectverseweb3'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
+    <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
 <div id="partner"></div>
     <div className="canva-embed-container">
       <iframe
@@ -279,7 +281,7 @@ function Home() {
 
 
 
-    <a style={{width:'100%',height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
+    <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
      
 
 
@@ -295,7 +297,7 @@ function Home() {
     <center>
 
       <br/><br></br>
-      <h1 style={{color:'white'}}>FAQ</h1>
+      <h1 style={{color:'white'}}>FAQs</h1>
       <br></br>
       <Accordion defaultActiveKey="0" className="custom-accordion">
   <Accordion.Item eventKey="0" className="custom-accordion-item">
@@ -310,19 +312,19 @@ function Home() {
     Through our targeted bootcamps and workshops, we help developers understand the technical aspects of your project, providing them with the necessary tools and knowledge to contribute to your ecosystem. We also host hands-on sessions where they can build real-world solutions using your technology.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="1" className="custom-accordion-item">
+  <Accordion.Item eventKey="2" className="custom-accordion-item">
     <Accordion.Header>What types of events does ConnectVerse organize for Web 3.0 brands?</Accordion.Header>
     <Accordion.Body>
     We organize bootcamps, workshops, hackathons, and hacker houses to help your brand connect with developers, users, and influencers. These events are designed to boost community engagement, showcase your project’s technology, and attract new users or developers to your ecosystem.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="1" className="custom-accordion-item">
+  <Accordion.Item eventKey="3" className="custom-accordion-item">
     <Accordion.Header>Can ConnectVerse help with user acquisition for my platform?</Accordion.Header>
     <Accordion.Body>
     Yes, we help attract and onboard users to your platform by organizing educational and engaging events that introduce them to the benefits of your Web 3.0 ecosystem. These events increase awareness and create a community of active users who are invested in your project’s success.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="1" className="custom-accordion-item">
+  <Accordion.Item eventKey="4" className="custom-accordion-item">
     <Accordion.Header>Can ConnectVerse help us with community building and engagement?</Accordion.Header>
     <Accordion.Body>
     Absolutely! Community building is a core part of what we do. Through consistent engagement, hands-on learning opportunities, and community-centric events, we help your brand establish a loyal and active user base. Our events also encourage networking and collaboration, creating a thriving ecosystem for your project.
@@ -380,9 +382,9 @@ Find Us On
 &nbsp;&nbsp;&nbsp;
 <SocialIcon url="https://t.me/connectverseweb3"/>
 &nbsp;&nbsp;&nbsp;
-<SocialIcon url="https://www.instagram.com/connectverse.tech/"/>
+<SocialIcon url="https://www.instagram.com/connectverse.events/"/>
 <br></br><br></br><br></br><br></br>
-<img style={{width:'15em'}} src={logo}></img>
+<img style={{width:'8em'}} src={logo}></img>
 &nbsp;
 All Rights Reserved
 <br></br>
