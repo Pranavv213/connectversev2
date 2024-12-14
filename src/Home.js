@@ -57,6 +57,8 @@ import AIAgent from './images/AIAgent.png'
 import Carousall from './images/Carousal1.png';
 import Carousal2 from './images/Carousal2.png';
 import Carousal3 from './images/Carousal3.png';
+import team from './images/team.png'
+import testimonials from './images/testimonials.png'
 
 function Home() {
 
@@ -281,8 +283,12 @@ function Home() {
 
 
  </div>
- 
+ <br></br><br></br>
+ <img src={testimonials} style={{width:'100%'}}></img>
+ <br></br><br></br>
     
+<img src={team} style={{width:'100%'}}></img>
+
  
    
     <center>
