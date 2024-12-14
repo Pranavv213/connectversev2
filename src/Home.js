@@ -21,7 +21,7 @@ import two from './images/two.png'
 import three from './images/three.png'
 import partners from './images/partners.png'
 import aboutusimg from './images/aboutusimg.mp4'
-import aboutus from './images/aboutus.png'
+import about from './images/about.png'
 import aboutvideo from './images/aboutvideo.mp4'
 import contact from './images/contact.mp4'
 import { ethers } from 'ethers';
@@ -49,11 +49,14 @@ import graph from './images/graph.png'
 import propeers from './images/propeers.avif'
 import defiverse from './images/defiverse.avif'
 import ai from './images/ai.gif'
-import homeimage from './images/homeimage.gif'
+import homeimage from './images/homeimage.png'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Accordion from 'react-bootstrap/Accordion';
 import AIAgent from './images/AIAgent.png'
+import Carousall from './images/Carousal1.png';
+import Carousal2 from './images/Carousal2.png';
+import Carousal3 from './images/Carousal3.png';
 
 function Home() {
 
@@ -140,14 +143,7 @@ function Home() {
       >
         Your browser does not support the video tag.
       </video> */}
-      <div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZKopszqI/my0D_gy2BaBz6E9ysJyhAQ/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
+      <img src={homeimage} style={{width:'100%'}}></img>
 
     
  
@@ -253,30 +249,11 @@ function Home() {
     
     </div>
 
-    <div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZKkfLxQg/E8PFIqq6YsYiFL0Gm_PemA/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
-    <div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZLHsZlRE/EmtuktET9ZqCjonHTMyt2g/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
-    <div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZLNMObBw/jOrsC-04O2VQc37VRhdlzg/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
+  <img src={Carousall} style={{width:'100%'}}></img>
+  <br></br>
+  <img src={Carousal2} style={{width:'100%'}}></img>
+  <br></br>
+  <img src={Carousal3} style={{width:'100%'}}></img>
 <br></br>
 
 
@@ -284,14 +261,7 @@ function Home() {
  <h2 style={{color:'white'}}> Automate your onboarding process with ConnectVerse</h2>
 <img style={{width:'20em'}} src={ai}></img>
 <br></br>
-<div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZLAxS6oA/eZn2aw_qxLioqnyrIkK3Sw/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
+<img src={about} style={{width:'100%'}}></img>
 
     <a style={{width:'100%',height:'70%'}} href='https://t.me/connectverseweb3'><button style={{width:'70%', height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
 
