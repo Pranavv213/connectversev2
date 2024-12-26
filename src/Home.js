@@ -59,8 +59,8 @@ import Carousal2 from './images/Carousal2.png';
 import Carousal3 from './images/Carousal3.png';
 import team from './images/team.png'
 import testimonials from './images/testimonials.png'
-import p1 from './images/partnership/p1.png'
-import p2 from './images/partnership/p2.png'
+import p1 from './images/partnership/p1.gif'
+import p2 from './images/partnership/p2.gif'
 import Cubane from './images/Cubane.webp'
 import homeimage_2 from './images/homeimage_2.png'
 
@@ -205,7 +205,13 @@ function Home() {
   
 
 
-  <section style={{color:'white'}}>
+  <section style={{color:'white', background: 'rgba(90, 30, 212, 0.41)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(3.1px)',
+  WebkitBackdropFilter: 'blur(3.1px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
+    <br></br> <br></br>
         <h2>Trusted By</h2>
         We are proud to collaborate with our esteemed partners.
         <br></br> <br></br> <br></br> 
@@ -221,14 +227,15 @@ function Home() {
                     alt="" />
                 <img style={{width:'10em'}} src={graph}
                     alt="" />
+                      <img style={{width:'10em'}} src={moi}
+                    alt="" />
                 <img style={{width:'15em'}} src={coinstore} alt=""/>
-                <img src={polygon}
-                    alt="" />
-                     <img style={{width:'5em'}} src={moi}
-                    alt="" />
+              
+                   
                 <img style={{width:'15em'}} src={stellar}
                     alt="" />
-              
+                <img src={polygon}
+                    alt="" />
                
                 <img style={{width:'10em'}} src={plutope}
                     alt="" />
@@ -277,12 +284,39 @@ function Home() {
             <div>
     
     </div>
+    <ScrollAnimation animateIn='bounceInLeft'
+  animateOut='bounceOutRight'>
+<img src={Carousall} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+  </ScrollAnimation>
+  
+  
+  <br></br>
+  <ScrollAnimation animateIn='bounceInRight'
+  animateOut='bounceOutLeft'>
+  <img src={Carousal2} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+   </ScrollAnimation>
+  <br></br>
 
-  <img src={Carousall} style={{width:'100%'}}></img>
-  <br></br>
-  <img src={Carousal2} style={{width:'100%'}}></img>
-  <br></br>
-  <img src={Carousal3} style={{width:'100%'}}></img>
+  <ScrollAnimation animateIn='bounceInLeft'
+  animateOut='bounceOutRight'>
+  <img src={Carousal3} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+  </ScrollAnimation>
+  
 <br></br>
 
 
@@ -297,10 +331,20 @@ function Home() {
     <br></br>
     <br></br>
 <div id="about"></div>
-<img src={about} style={{width:'100%'}}></img>
+<img src={about} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
 <br></br>
-<img src={team} style={{width:'100%'}}></img>
-
+<img src={team} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+<br></br>
     <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
     <br></br> <br></br>
 
@@ -321,32 +365,62 @@ function Home() {
     
       <h1 style={{color:'white'}}>FAQs</h1>
       <br></br>
-      <Accordion defaultActiveKey="0" className="custom-accordion">
-  <Accordion.Item eventKey="0" className="custom-accordion-item">
+      <Accordion defaultActiveKey="0" className="custom-accordion" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
+  <Accordion.Item eventKey="0" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
     <Accordion.Header>How can ConnectVerse help my Web 3.0 brand? </Accordion.Header>
     <Accordion.Body>
     ConnectVerse specializes in onboarding developers and users to your ecosystem through immersive events like bootcamps, workshops, and hacker houses. We provide a tailored approach to engage and grow your community, ensuring your brand is positioned for success in the decentralized ecosystem.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="1" className="custom-accordion-item">
+  <Accordion.Item eventKey="1" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
     <Accordion.Header>How can ConnectVerse help onboard developers to my Web 3.0 project?</Accordion.Header>
     <Accordion.Body>
     Through our targeted bootcamps and workshops, we help developers understand the technical aspects of your project, providing them with the necessary tools and knowledge to contribute to your ecosystem. We also host hands-on sessions where they can build real-world solutions using your technology.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="2" className="custom-accordion-item">
+  <Accordion.Item eventKey="2" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
     <Accordion.Header>What types of events does ConnectVerse organize for Web 3.0 brands?</Accordion.Header>
     <Accordion.Body>
     We organize bootcamps, workshops, hackathons, and hacker houses to help your brand connect with developers, users, and influencers. These events are designed to boost community engagement, showcase your project’s technology, and attract new users or developers to your ecosystem.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="3" className="custom-accordion-item">
+  <Accordion.Item eventKey="3" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
     <Accordion.Header>Can ConnectVerse help with user acquisition for my platform?</Accordion.Header>
     <Accordion.Body>
     Yes, we help attract and onboard users to your platform by organizing educational and engaging events that introduce them to the benefits of your Web 3.0 ecosystem. These events increase awareness and create a community of active users who are invested in your project’s success.
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="4" className="custom-accordion-item">
+  <Accordion.Item eventKey="4" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
     <Accordion.Header>Can ConnectVerse help us with community building and engagement?</Accordion.Header>
     <Accordion.Body>
     Absolutely! Community building is a core part of what we do. Through consistent engagement, hands-on learning opportunities, and community-centric events, we help your brand establish a loyal and active user base. Our events also encourage networking and collaboration, creating a thriving ecosystem for your project.

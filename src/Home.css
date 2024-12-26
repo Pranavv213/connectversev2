@@ -109,9 +109,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      
      
-      animation: scrolling 20s linear infinite;
+      animation: scrolling 10s linear infinite;
   
   }
   
@@ -936,3 +936,5 @@ border: 1px solid rgba(255, 255, 255, 0.51);
   
   flex-wrap: wrap;
 }
+
+
