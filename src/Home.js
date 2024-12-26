@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -62,12 +62,18 @@ import testimonials from './images/testimonials.png'
 import p1 from './images/partnership/p1.png'
 import p2 from './images/partnership/p2.png'
 import Cubane from './images/Cubane.webp'
-const timestamp = new Date().getTime();
+import homeimage_2 from './images/homeimage_2.png'
 
 
 
 
 function Home() {
+
+
+  const timestamp = new Date().getTime();
+
+
+  const [showGif, setShowGif] = useState(true);
 
     const [account,setAccount]=useState('Connect Wallet')
     const [index, setIndex] = useState(0);
@@ -80,7 +86,13 @@ function Home() {
 
     const notify = () => toast("Email copied to clipboard !");
     const notify1 = () => toast("Submitted. We will reach out to you soon !");
-
+    useEffect(() => {
+      // Switch to PNG after 4 seconds
+      const timer = setTimeout(() => setShowGif(false), 3300);
+  
+      // Cleanup timeout
+      return () => clearTimeout(timer);
+    }, []);
 
 
   return (
@@ -153,7 +165,12 @@ function Home() {
       >
         Your browser does not support the video tag.
       </video> */}
-      <img src={`${homeimage}?${timestamp}`} style={{width:'100%'}}></img>
+     
+      <img 
+        src={showGif ? homeimage : homeimage_2} 
+        style={{width:'100%'}}
+        alt="Image" 
+      />
 
     
       <center>
