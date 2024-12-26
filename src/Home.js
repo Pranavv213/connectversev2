@@ -59,8 +59,8 @@ import Carousal2 from './images/Carousal2.png';
 import Carousal3 from './images/Carousal3.png';
 import team from './images/team.png'
 import testimonials from './images/testimonials.png'
-import p1 from './images/partnership/p1.gif'
-import p2 from './images/partnership/p2.gif'
+import p1 from './images/partnership/p11.png'
+import p2 from './images/partnership/p22.png'
 import Cubane from './images/Cubane.webp'
 import homeimage_2 from './images/homeimage_2.png'
 import AOS from 'aos';
@@ -204,16 +204,18 @@ function Home() {
   
   
 
-
+     
   <section style={{color:'white', background: 'rgba(90, 30, 212, 0.41)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(3.1px)',
   WebkitBackdropFilter: 'blur(3.1px)',
   border: '1px solid rgba(90, 30, 212, 0.84)'}} >
-    <br></br> <br></br>
+     <br></br> <br></br>
+      <center>
         <h2>Trusted By</h2>
-     Proud to collaborate with our esteemed partners.
+    Proud to collaborate with our esteemed partners.
+     </center>
         <br></br> <br></br> <br></br> 
         <div class="slider">
             <div class="slider-items">
