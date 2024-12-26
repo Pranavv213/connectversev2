@@ -176,7 +176,7 @@ function Home() {
       <center>
    
     
-      <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{ height:'70%'}} class="button-85" role="button">Book a Call</button></a>
+      <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community</button></a>
       </center>
 <br></br>
      
