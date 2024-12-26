@@ -49,7 +49,7 @@ import graph from './images/graph.png'
 import propeers from './images/propeers.avif'
 import defiverse from './images/defiverse.avif'
 import ai from './images/ai.gif'
-import homeimage from './images/homeimage.png'
+import homeimage from './images/homeimage.gif'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Accordion from 'react-bootstrap/Accordion';
@@ -62,6 +62,8 @@ import testimonials from './images/testimonials.png'
 import p1 from './images/partnership/p1.png'
 import p2 from './images/partnership/p2.png'
 import Cubane from './images/Cubane.webp'
+const timestamp = new Date().getTime();
+
 
 
 
@@ -151,7 +153,7 @@ function Home() {
       >
         Your browser does not support the video tag.
       </video> */}
-      <img src={homeimage} style={{width:'100%'}}></img>
+      <img src={`${homeimage}?${timestamp}`} style={{width:'100%'}}></img>
 
     
       <center>
