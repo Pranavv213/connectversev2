@@ -436,7 +436,12 @@ function Home() {
 </Accordion>
 <br></br>
 
-      <div id="contact"></div>
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/dKPjWH2ngM-yLWxO0iOb4"
+width="100%"
+style={{height: '100%', minHeight: '700px'}} data-aos="slide-up"
+frameborder="0"
+></iframe>
  
 <div style={{backgroundColor:'black'}}> 
 
