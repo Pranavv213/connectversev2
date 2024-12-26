@@ -167,7 +167,7 @@ function Home() {
       </video> */}
      
       <img 
-        src={showGif ? homeimage : homeimage_2} 
+        src={ homeimage} 
         style={{width:'100%'}}
         alt="Image" 
       />
