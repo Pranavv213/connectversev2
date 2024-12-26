@@ -354,22 +354,7 @@ function Home() {
   </Accordion.Item>
 </Accordion>
 <br></br>
-<div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGZLmgoPXY/63yAKonNcVfbHZvirGI9lQ/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
 
-
-<iframe
-src="https://www.chatbase.co/chatbot-iframe/dKPjWH2ngM-yLWxO0iOb4"
-width="100%"
-style={{height: '100%', minHeight: '700px'}}
-frameborder="0"
-></iframe>
       <div id="contact"></div>
  
 <div style={{backgroundColor:'black'}}> 
