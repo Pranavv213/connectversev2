@@ -61,6 +61,7 @@ import team from './images/team.png'
 import testimonials from './images/testimonials.png'
 import p1 from './images/partnership/p1.png'
 import p2 from './images/partnership/p2.png'
+import Cubane from './images/Cubane.webp'
 
 
 
@@ -211,6 +212,8 @@ function Home() {
               
                
                 <img style={{width:'10em'}} src={plutope}
+                    alt="" />
+                <img style={{width:'10em'}} src={Cubane}
                     alt="" />
                 <img src={polygon}
                     alt="" />
