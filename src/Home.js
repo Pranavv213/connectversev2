@@ -288,27 +288,31 @@ function Home() {
 
 
 <br></br>
-<div id="about"></div>
-<img src={about} style={{width:'100%'}}></img>
-<br></br>
-
-    <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
-    <br></br> <br></br>
 <div id="partner"></div>
 <img src={p1} style={{width:'100%'}}></img>
 <img src={p2} style={{width:'100%'}}></img>
 
 
     <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
+    <br></br>
+    <br></br>
+<div id="about"></div>
+<img src={about} style={{width:'100%'}}></img>
+<br></br>
+<img src={team} style={{width:'100%'}}></img>
+
+    <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
+    <br></br> <br></br>
+
      
 
 
  </div>
- <br></br><br></br>
- <img src={testimonials} style={{width:'100%'}}></img>
- <br></br><br></br>
-    
-<img src={team} style={{width:'100%'}}></img>
+ <br></br>
+
+
+
+
 
  
    
@@ -399,8 +403,7 @@ Find Us On
 <SocialIcon url="https://in.linkedin.com/company/connect-verse"/>
 &nbsp;&nbsp;&nbsp;
 <SocialIcon url="https://t.me/connectverseweb3"/>
-&nbsp;&nbsp;&nbsp;
-<SocialIcon url="https://www.instagram.com/connectverse.events/"/>
+
 <br></br><br></br><br></br><br></br>
 <img style={{width:'8em'}} src={logo}></img>
 &nbsp;
