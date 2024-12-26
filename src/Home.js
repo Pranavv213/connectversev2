@@ -63,7 +63,8 @@ import p1 from './images/partnership/p1.gif'
 import p2 from './images/partnership/p2.gif'
 import Cubane from './images/Cubane.webp'
 import homeimage_2 from './images/homeimage_2.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 
 
@@ -72,6 +73,8 @@ function Home() {
 
   const timestamp = new Date().getTime();
 
+ 
+  
 
   const [showGif, setShowGif] = useState(true);
 
@@ -87,11 +90,8 @@ function Home() {
     const notify = () => toast("Email copied to clipboard !");
     const notify1 = () => toast("Submitted. We will reach out to you soon !");
     useEffect(() => {
-      // Switch to PNG after 4 seconds
-      const timer = setTimeout(() => setShowGif(false), 3300);
-  
-      // Cleanup timeout
-      return () => clearTimeout(timer);
+     
+        AOS.init({ duration: 1000 });
     }, []);
 
 
@@ -210,10 +210,10 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(3.1px)',
   WebkitBackdropFilter: 'blur(3.1px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} >
     <br></br> <br></br>
         <h2>Trusted By</h2>
-        We are proud to collaborate with our esteemed partners.
+     Proud to collaborate with our esteemed partners.
         <br></br> <br></br> <br></br> 
         <div class="slider">
             <div class="slider-items">
@@ -284,38 +284,36 @@ function Home() {
             <div>
     
     </div>
-    <ScrollAnimation animateIn='bounceInLeft'
-  animateOut='bounceOutRight'>
+   
 <img src={Carousall} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
-  </ScrollAnimation>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up"></img>
+
   
   
   <br></br>
-  <ScrollAnimation animateIn='bounceInRight'
-  animateOut='bounceOutLeft'>
+  
   <img src={Carousal2} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
-   </ScrollAnimation>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-down"></img>
+  
   <br></br>
 
-  <ScrollAnimation animateIn='bounceInLeft'
-  animateOut='bounceOutRight'>
+
+
   <img src={Carousal3} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
-  </ScrollAnimation>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up"></img>
+
   
 <br></br>
 
@@ -323,9 +321,16 @@ function Home() {
 
 <br></br>
 <div id="partner"></div>
-<img src={p1} style={{width:'100%'}}></img>
+<div style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="zoom-in">
+<img src={p1} style={{width:'100%'}} ></img>
 <img src={p2} style={{width:'100%'}}></img>
-
+</div>
+<br></br>
 
     <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
     <br></br>
@@ -336,14 +341,14 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
 <br></br>
 <img src={team} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}></img>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
 <br></br>
     <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
     <br></br> <br></br>
@@ -365,12 +370,12 @@ function Home() {
     
       <h1 style={{color:'white'}}>FAQs</h1>
       <br></br>
-      <Accordion defaultActiveKey="0" className="custom-accordion" style={{background: 'rgba(90, 30, 212, 0.52)',
+      <Accordion  className="custom-accordion" style={{background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}}>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="zoom-out">
   <Accordion.Item eventKey="0" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
