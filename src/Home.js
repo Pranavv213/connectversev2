@@ -59,6 +59,9 @@ import Carousal2 from './images/Carousal2.png';
 import Carousal3 from './images/Carousal3.png';
 import team from './images/team.png'
 import testimonials from './images/testimonials.png'
+import p1 from './images/partnership/p1.png'
+import p2 from './images/partnership/p2.png'
+
 
 
 function Home() {
@@ -261,24 +264,17 @@ function Home() {
 <br></br>
 
 
- <br></br><br></br>
- <h2 style={{color:'white'}}> Automate your onboarding process with ConnectVerse</h2>
-<img style={{width:'20em'}} src={ai}></img>
+
 <br></br>
 <div id="about"></div>
 <img src={about} style={{width:'100%'}}></img>
+<br></br>
 
     <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
+    <br></br> <br></br>
 <div id="partner"></div>
-    <div className="canva-embed-container">
-      <iframe
-        loading="lazy"
-        src=" https://www.canva.com/design/DAGZLLrG4aI/xebTTAC7d6rrcHL00006LA/view?embed"
-        allowFullScreen
-        allow="fullscreen"
-      ></iframe>
-    </div>
-
+<img src={p1} style={{width:'100%'}}></img>
+<img src={p2} style={{width:'100%'}}></img>
 
 
     <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
