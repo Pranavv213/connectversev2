@@ -318,7 +318,7 @@ function Home() {
    
     <center>
 
-      <br/><br></br>
+    
       <h1 style={{color:'white'}}>FAQs</h1>
       <br></br>
       <Accordion defaultActiveKey="0" className="custom-accordion">
