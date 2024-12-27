@@ -269,7 +269,7 @@ function Home() {
                         .typeString("20,000+ Developers Onboarded")
                         .pauseFor(200)
                         .deleteAll()
-                        .typeString("50+ Happy Clients")
+                        .typeString("50+ Partners")
                         .start();
                 }}
                 options={{
@@ -292,7 +292,7 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up"></img>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
 
   
   
@@ -303,7 +303,7 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-down"></img>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-down"></img>
   
   <br></br>
 
@@ -314,7 +314,7 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up"></img>
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
 
   
 <br></br>
