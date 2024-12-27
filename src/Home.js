@@ -377,7 +377,7 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="zoom-out">
+  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up">
   <Accordion.Item eventKey="0" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
