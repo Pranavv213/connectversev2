@@ -38,7 +38,7 @@ import Typewriter from "typewriter-effect";
 import moi from './images/moi.png'
 import plutope from './images/plutope.svg'
 import polygon from './images/polygon.png'
-import router from './images/router.png'
+import router from './images/router.svg'
 import qoneqt from './images/qoneqt.png'
 import icp from './images/icp.png'
 import stellar from './images/stellar.png'
@@ -61,11 +61,24 @@ import team from './images/team.png'
 import testimonials from './images/testimonials.png'
 import p1 from './images/partnership/p11.png'
 import p2 from './images/partnership/p22.png'
+import w1 from  './images/w1.png'
 import Cubane from './images/Cubane.webp'
 import homeimage_2 from './images/homeimage_2.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import event1 from './images/event1.avif';
+import event2 from './images/event2.avif';
+import event3 from './images/event3.avif';
+import event4 from './images/event4.avif';
+import founder from './images/Team/founder.jpg'
+import advisor from './images/Team/advisor.jpg'
+import bd from './images/Team/bd.jpg'
+import events from './images/Team/events.JPG'
+import CLB from './images/Team/CLB.jpeg'
+import design from './images/Team/design.jpg'
+import technology from './images/Team/technology.png'
 
 
 function Home() {
@@ -189,175 +202,274 @@ function Home() {
       
   
   
-      
+      <br></br>
+<h2 style={{color:'white'}}>Recent Events</h2>
+<br></br>
+<div class="partnerus"  data-aos="zoom-in" >
+    <br></br><br></br><br></br>
    
-          
-            
-   
-    
-  
+    <br></br>
 
+    <Card style={{ width: '25rem' }} >
+      <Card.Img variant="top" src={event4} />
+      <Card.Body>
+        <Card.Title>2025 Web3 Kickstart with Stellar</Card.Title>
+        <Card.Text>
+          Jan 11 , 2025
+        </Card.Text>
+        <a href="https://lu.ma/oxofh8e3"> <button class="button-85">Register</button></a>
+       
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '25rem' }}>
+      <Card.Img variant="top" src={event3} />
+      <Card.Body>
+        <Card.Title>Fireside chat with Kunal Kushwaha</Card.Title>
+        <Card.Text>
+         8th December , 2024
+        </Card.Text>
+        <Button variant="primary">Registrations Closed</Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '25rem' }}>
+      <Card.Img variant="top" src={event2} />
+      <Card.Body>
+        <Card.Title>Web3Utsav with MOI & Qoneqt</Card.Title>
+        <Card.Text>
+        24th Nov , 2024
+        </Card.Text>
+        <Button variant="primary">Registrations Closed</Button>
+      </Card.Body>
+    </Card>
+
+
+    </div>
+   
+          <br></br> <br></br> <br></br>
+         
+  <br></br><br></br><br></br>
       <center>
-        <h2 style={{color:'white'}}>Trusted By</h2>
+        <h2 style={{color:'white'}}>Our Partners</h2>
     <l style={{color:'white'}}>Proud to collaborate with our esteemed partners.</l>
      </center>
      <br></br>
 
-  <Marquee>
-    <div class="newPartners">
-<img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={icp}
-                    alt="" />
-                <img style={{width:'20em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={router}
-                    alt="" />
-                <img style={{width:'10em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={bharatbox}
-                    alt="" />
-                <img style={{width:'13em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={qoneqt}
-                    alt="" />
-                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={graph}
-                    alt="" />
-                      <img style={{width:'10em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={moi}
-                    alt="" />
-                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={coinstore} alt=""/>
-              
-                   
-                <img style={{width:'12em',filter: 'grayscale(100%)',paddingRight:'4em'}} src={stellar}
-                    alt="" />
-              
-                
-               
-                <img style={{width:'12em',filter: 'grayscale(100%)',paddingRight:'4em'}} src={plutope}
-                    alt="" />
-                <img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={Cubane}
-                    alt="" />
-                <img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={polygon}
-                    alt="" />
-                <img style={{width:'15em',filter: 'grayscale(100%)  brightness(100%)',paddingRight:'4em'}} src={defiverse}
-                    alt="" />
-                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={propeers} alt=""/>
-                </div>
-                </Marquee>
-   
-    
-
+     <div className="table-container" style={{ 
+  display: 'flex', 
+  flexWrap: 'wrap', 
+  justifyContent: 'center', 
+  gap: '1em' 
+}}>
   
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={router} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={bharatbox} 
+      alt="" 
+    />
+  </div>
   
-
-
-    <br></br>
-    <br></br>
-<div style={{color:'white'}}>
-  <h2>
-    <Typewriter 
-                onInit={(typewriter) => {
-                    typewriter
-                        .typeString("250+ IRL Events Conducted")
-                        .pauseFor(200)
-                        .deleteAll()
-                        .typeString("20,000+ Developers Onboarded")
-                        .pauseFor(200)
-                        .deleteAll()
-                        .typeString("50+ Partners")
-                        .start();
-                }}
-                options={{
-                  wrapperClassName: 'text-white'  // Makes the typewriter text white
-              }}
-
-              
-
-              
-            />
-            </h2>
-            </div>
-
-            <div>
-    
-    </div>
-   
-<img src={Carousall} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
-
-  
-  
-  <br></br>
-  
-  <img src={Carousal2} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-down"></img>
-  
-  <br></br>
-
-
-
-  <img src={Carousal3} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
-
-  
-<br></br>
-
-
-
-<br></br>
-<div id="partner"></div>
-<div style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="zoom-in">
-<img src={p1} style={{width:'100%'}} ></img>
-<img src={p2} style={{width:'100%'}}></img>
-</div>
-<br></br>
-
-    <a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
-    <br></br>
-    <br></br>
-<div id="about"></div>
-<img src={about} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
-<br></br>
-<img src={team} style={{width:'100%', background: 'rgba(90, 30, 212, 0.52)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="slide-up"></img>
-<br></br>
-    <a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{ height:'70%'}} class="button-85" role="button">Join Our Community </button></a>
-    <br></br> <br></br>
-
-     
-
-
- </div>
- <br></br>
-
-
-
-
-
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={coinstore} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%)',
+        padding: '1em' 
+      }} 
+      src={stellar} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%)',
+        padding: '1em' 
+      }} 
+      src={plutope} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={Cubane} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={polygon} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={propeers} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={qoneqt} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={graph} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '8em', 
+        height: '8em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={moi} 
+      alt="" 
+    />
+  </div>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+    <img 
+      style={{ 
+        width: '10em', 
+        height: '10em', 
+        objectFit: 'contain', 
+        filter: 'grayscale(100%) invert(100%) brightness(100%)',
+        padding: '1em' 
+      }} 
+      src={icp} 
+      alt="" 
+    />
+  </div>
  
+</div>
+<br></br><br></br><br></br><br></br><br></br>
    
+    <div id="partner"></div>
     <center>
+      <div class="partnerus" style={{ 
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)',color:'white',  textAlign: 'left'}} data-aos="slide-up" >
+      <div style={{margin:'2em'}}>
+        <center>
+     
+      <h2>
+  
+            Why Partner Us ?
+            </h2>
+            </center>
+        <br></br> <br></br>
+        <b style={{color:'violet'}}>
+      1. Workshop Promotion:</b> We'll actively promote your products or services during our workshops, giving your brand increased recognition.
+      <br></br> <br></br>
+      <b style={{color:'violet'}}>
+2. Community Expansion:</b> Attract numerous developers and community members to boost your own community's growth.
+<br></br> <br></br>
+<b style={{color:'violet'}}>
+3. Educational Institution Visibility: </b>Gain prominence in various educational institutions, both online and offline, by participating in our roadshow.
+<br></br> <br></br>
+<b style={{color:'violet'}}>
+4. User Onboarding:</b> Attract and onboard new users into your ecosystem, expanding your influence and reach.
+<br></br> <br></br>
+<b style={{color:'violet'}}>
+6. Collaborative Events: </b>Join forces with us to conduct workshops, hackathons, quests, and whitelisting events, attracting a diverse range of participants.
+<br></br> <br></br>
+<b style={{color:'violet'}}>
+7. Community Growth:</b> Witness an increase in the number of users and participants within your ecosystem.
+<br></br> <br></br>
+<b style={{color:'violet'}}>
+8. Enhanced Brand Visibility:</b> Reach a broad and diverse audience, significantly amplifying your brand's visibility.
 
-    
-      <h1 style={{color:'white'}}>FAQs</h1>
+</div>
+<a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
+<br></br><br></br><br></br><br></br><br></br>
+</div>
+
+</center>
+  <br></br><br></br><br></br>
+  <h2 style={{color:'white'}}>FAQs</h2>
       <br></br>
       <Accordion  className="custom-accordion" style={{background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
@@ -421,22 +533,184 @@ function Home() {
     </Accordion.Body>
   </Accordion.Item>
 </Accordion>
+<br></br><br></br><br></br>
+  <div id="about"></div>
+    <center>
+      <div class="partnerus" style={{ 
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)',color:'white',  textAlign: 'left'}} data-aos="slide-up" >
+      <div style={{margin:'2em'}}>
+        <center>
+     
+      <h2>
+  
+            About Us
+            </h2>
+            </center>
+        <br></br> <br></br>
+        <center>
+        <h3>
+        <b style={{color:'violet'}}>Empowering Web3 Brands to Drive Adoption and Growth</b></h3>
+        </center>
+        <br></br><br></br>
+At ConnectVerse, we are dedicated to accelerating Web3 adoption by providing brands with the tools and strategies they need to onboard both developers and users into their ecosystems seamlessly. Our mission is to bridge the gap between cutting-edge innovation and meaningful engagement, ensuring that projects in the decentralized space not only succeed but thrive in an increasingly complex and competitive market.
+<br></br><br></br><br></br>
+We understand that the future of Web3 lies in the strength and growth of its communities. That's why we focus on creating tailored strategies that enable Web3 brands to attract, engage, and retain top-tier developers while also growing a loyal and active user base. Whether it’s through specialized bootcamps, hands-on workshops, or immersive hackathons, ConnectVerse offers real-world experiences that foster collaboration, knowledge-sharing, and long-term participation within the Web3 ecosystem.
+<br></br><br></br><br></br>
+Our expertise lies in understanding the needs of both Web3 brands and the people who interact with them. By leveraging AI and data-driven insights, we provide highly personalized onboarding experiences that streamline the process for developers and users alike. These initiatives ensure that participants not only understand the technology but are also motivated to contribute to its success.
+<br></br><br></br><br></br>
+As a trusted partner to Web3 brands, ConnectVerse helps create vibrant, sustainable communities around innovative projects. Our goal is to cultivate environments where users and developers feel empowered, engaged, and excited about contributing to the decentralized future. Through education, hands-on experience, and strategic guidance, we ensure that our partners' ecosystems are positioned for long-term growth, scalability, and success.
+<br></br><br></br><br></br>
+At ConnectVerse, we are proud to be at the forefront of Web3 adoption, driving positive change by helping brands unlock their full potential in the decentralized world.
+</div>
+<a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
+<br></br><br></br><br></br><br></br><br></br>
+
+<div class="partnerus"  style={{ 
+  
+  background: 'rgba(169, 18, 237, 0.49)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)', // For Safari support
+  border: '1px solid rgba(169, 18, 237, 0.3)',color:'white',backgroundColor:'purple',  textAlign: 'left'}}  >
+    <br></br><br></br> <br></br><br></br> <br></br><br></br>
+    <h1 style={{color:'white'}}>Our Team </h1>
+    <br></br><br></br><br></br><br></br><br></br><br></br>
+<div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={founder}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Pranav Verma</b>
+    <br></br>
+    <l style={{color:'white'}}>Founder</l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img   style={{width:'10em',height:'12em'}} src={bd}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Venkatesh </b>
+    <br></br>
+    <l style={{color:'white'}}>BD Manager</l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={events}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Anirban Das</b>
+    <br></br>
+    <l style={{color:'white'}}>Head of Events</l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={CLB}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Raghavendra</b>
+    <br></br>
+    <l style={{color:'white'}}>Community Lead </l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={technology}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Shubhaam Tiwary</b>
+    <br></br>
+    <l style={{color:'white'}}>Head of Technology</l>
+    </center>
+    </div >
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={design}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Harsh Vaja</b>
+    <br></br>
+    <l style={{color:'white'}}>Head of Design</l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={advisor}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Manoj Jain</b>
+    <br></br>
+    <l style={{color:'white'}}>Advisor</l>
+    </center>
+    </div>
+    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
+    <img  style={{width:'10em',height:'12em' }} src={founder}></img>
+    <br></br>
+    <center>
+    <b style={{color:'white'}}>Pranav Verma</b>
+    <br></br>
+    <l style={{color:'white'}}>Founder</l>
+    </center>
+    </div>
+    
+
+
+    </div>
+</div>
+
+</center>
+  <br></br>
+
 <br></br>
 
-<iframe
-src="https://www.chatbase.co/chatbot-iframe/dKPjWH2ngM-yLWxO0iOb4"
-width="100%"
-style={{height: '100%', minHeight: '700px'}} data-aos="slide-up"
-frameborder="0"
-></iframe>
+
+    <br></br>
+    <br></br>
+<div style={{color:'white'}}>
  
+            </div>
+
+            <div>
+   
+    </div>
+   
+
+
+
+
+    
+    <br></br>
+    <br></br>
+<div id="about"></div>
+
+    
+    
+     
+
+
+ </div>
+ <br></br>
+
+
+
+
+
+ 
+   
+    <center>
+
+    
+      
+<br></br>
+
+
 <div style={{backgroundColor:'black'}}> 
 
 <br></br>
 
-<br></br><br></br><br></br><br></br>
+
 <hr style={{backgroundColor:'white', color:'white'}}></hr>
-<br></br><br></br><br></br><br></br>
+
 <ToastContainer />
 <div style={{color:'white'}}>
 Find Us On

@@ -38,7 +38,7 @@ import Typewriter from "typewriter-effect";
 import moi from './images/moi.png'
 import plutope from './images/plutope.svg'
 import polygon from './images/polygon.png'
-import router from './images/router.png'
+import router from './images/router.svg'
 import qoneqt from './images/qoneqt.png'
 import icp from './images/icp.png'
 import stellar from './images/stellar.png'
