@@ -36,7 +36,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { SocialIcon } from 'react-social-icons'
 import Typewriter from "typewriter-effect";
 import moi from './images/moi.png'
-import plutope from './images/plutope.avif'
+import plutope from './images/plutope.svg'
 import polygon from './images/polygon.png'
 import router from './images/router.png'
 import qoneqt from './images/qoneqt.png'
@@ -44,10 +44,10 @@ import icp from './images/icp.png'
 import stellar from './images/stellar.png'
 import bharatbox from './images/bharatbox.png'
 import inco from './images/inco.avif'
-import coinstore from './images/coinstore.avif'
+import coinstore from './images/coinstore.png'
 import graph from './images/graph.png'
 import propeers from './images/propeers.avif'
-import defiverse from './images/defiverse.avif'
+import defiverse from './images/defiverse.png'
 import ai from './images/ai.gif'
 import homeimage from './images/homeimage.gif'
 import { ToastContainer, toast } from 'react-toastify';
@@ -197,64 +197,51 @@ function Home() {
     
   
 
-    
- 
-   
-   
-  
-  
-
-     
-  <section style={{color:'white', background: 'rgba(90, 30, 212, 0.41)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(3.1px)',
-  WebkitBackdropFilter: 'blur(3.1px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} >
-     <br></br> <br></br>
       <center>
-        <h2>Trusted By</h2>
-    Proud to collaborate with our esteemed partners.
+        <h2 style={{color:'white'}}>Trusted By</h2>
+    <l style={{color:'white'}}>Proud to collaborate with our esteemed partners.</l>
      </center>
-        <br></br> <br></br> <br></br> 
-        <div class="slider">
-            <div class="slider-items">
-                <img src={icp}
+     <br></br>
+
+  <Marquee>
+    <div class="newPartners">
+<img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={icp}
                     alt="" />
-                <img style={{width:'20em'}} src={router}
+                <img style={{width:'20em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={router}
                     alt="" />
-                <img src={bharatbox}
+                <img style={{width:'10em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={bharatbox}
                     alt="" />
-                <img src={qoneqt}
+                <img style={{width:'13em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={qoneqt}
                     alt="" />
-                <img style={{width:'10em'}} src={graph}
+                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={graph}
                     alt="" />
-                      <img style={{width:'10em'}} src={moi}
+                      <img style={{width:'10em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={moi}
                     alt="" />
-                <img style={{width:'15em'}} src={coinstore} alt=""/>
+                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={coinstore} alt=""/>
               
                    
-                <img style={{width:'15em'}} src={stellar}
+                <img style={{width:'12em',filter: 'grayscale(100%)',paddingRight:'4em'}} src={stellar}
                     alt="" />
-                <img src={polygon}
-                    alt="" />
+              
+                
                
-                <img style={{width:'10em'}} src={plutope}
+                <img style={{width:'12em',filter: 'grayscale(100%)',paddingRight:'4em'}} src={plutope}
                     alt="" />
-                <img style={{width:'10em'}} src={Cubane}
+                <img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={Cubane}
                     alt="" />
-                <img src={polygon}
+                <img style={{width:'15em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={polygon}
                     alt="" />
-                <img src={defiverse}
+                <img style={{width:'15em',filter: 'grayscale(100%)  brightness(100%)',paddingRight:'4em'}} src={defiverse}
                     alt="" />
-                <img src={propeers} alt=""/>
-               
+                <img style={{width:'12em',filter: 'grayscale(100%) invert(100%) brightness(100%)',paddingRight:'4em'}} src={propeers} alt=""/>
+                </div>
+                </Marquee>
+   
+    
 
+  
+  
 
-            </div>
-        </div>
-
-    </section>
 
     <br></br>
     <br></br>
