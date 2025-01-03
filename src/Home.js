@@ -112,7 +112,7 @@ function Home() {
     <div>
   
 
-      <Navbar expand="lg" data-bs-theme="dark" className="bg-black" type="sticky">
+      <Navbar expand="lg" data-bs-theme="dark" className="bg-black" sticky="top">
       <Container>
       <Navbar.Brand href="#home"><img style={{width:'10em'}} src={logo}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -210,7 +210,7 @@ function Home() {
    
     <br></br>
 
-    <Card style={{ width: '25rem' }} >
+    <Card style={{ width: '25rem' }} data-aos="flip-up" >
       <Card.Img variant="top" src={event4} />
       <Card.Body>
         <Card.Title>2025 Web3 Kickstart with Stellar</Card.Title>
@@ -222,7 +222,7 @@ function Home() {
       </Card.Body>
     </Card>
 
-    <Card style={{ width: '25rem' }}>
+    <Card style={{ width: '25rem' }} data-aos="flip-up">
       <Card.Img variant="top" src={event3} />
       <Card.Body>
         <Card.Title>Fireside chat with Kunal Kushwaha</Card.Title>
@@ -248,10 +248,10 @@ function Home() {
     </div>
    
           <br></br> <br></br> <br></br>
-         
+      
   <br></br><br></br><br></br>
       <center>
-        <h2 style={{color:'white'}}>Our Partners</h2>
+        <h2 style={{color:'white'}} data-aos="flip-up">Our Partners</h2>
     <l style={{color:'white'}}>Proud to collaborate with our esteemed partners.</l>
      </center>
      <br></br>
@@ -261,9 +261,9 @@ function Home() {
   flexWrap: 'wrap', 
   justifyContent: 'center', 
   gap: '1em' 
-}}>
+}} data-aos="slide-up">
   
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -276,7 +276,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -290,7 +290,7 @@ function Home() {
     />
   </div>
   
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -303,7 +303,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -316,7 +316,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -329,7 +329,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -342,7 +342,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -355,7 +355,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -368,7 +368,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -381,7 +381,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -394,7 +394,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '8em', 
@@ -407,7 +407,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }}>
+  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -423,7 +423,60 @@ function Home() {
  
 </div>
 <br></br><br></br><br></br><br></br><br></br>
-   
+
+<h1 style={{color:'violet'}}>Onboarding Made Easy!</h1>
+<div class="partnerus" style={{ 
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)',color:'white',  textAlign: 'left'}} data-aos="slide-up" >
+
+<div style={{padding:'2em'}} class="specs">
+  <div class="specstext" style={{width:'30em',padding:'2em'}} data-aos="slide-up"><h2>250+ IRL Events </h2>
+  <br></br>
+  Hosted 250+ IRL events, uniting Web 3 enthusiasts and developers to build communities and drive adoption within specific ecosystems.
+  </div>
+  <div>
+
+  <img style={{width:'20em' , borderRadius:'10px'}} src={irl3} data-aos="flip-up"></img>
+  </div>
+  </div>
+  <div style={{padding:'2em'}} class="specs">
+  <div class="specstext" style={{width:'30em',padding:'2em'}} data-aos="slide-up"><h2>10+ Bootcamps </h2>
+  <br></br>
+  Conducted 10 bootcamps, equipping developers with hands-on skills to build on specific ecosystems and accelerate adoption.
+  </div>
+  <div>
+
+  <img style={{width:'20em' , borderRadius:'10px'}} src={irl2} data-aos="flip-up"></img>
+  </div>
+  </div>
+  <div style={{padding:'2em'}} class="specs">
+  <div class="specstext" style={{width:'30em',padding:'2em'}} data-aos="slide-up"><h2>5+ hackathons </h2>
+  <br></br>
+  Organized 5 hackathons, empowering developers to build on specific ecosystems , thus driving growth and utility.
+  </div>
+  <div>
+
+  <img style={{width:'20em' , borderRadius:'10px'}} src={irl1} data-aos="flip-up"></img>
+  </div>
+  </div>
+</div>
+<br></br><br></br>
+<h1 style={{color:'violet'}} data-aos="flip-up" >Building Trust in the Trusless Space </h1>
+
+<div class="xembed">
+<XEmbed url="https://x.com/qoneqtapp/status/1749671209741201786" width={400} height={400} style={{padding:'2em',borderRadius:'10px'} } data-aos="slide-up" />
+<XEmbed url="https://x.com/MOI_Tech/status/1859513577738207636" width={400}height={500} style={{padding:'2em'}} data-aos="flip-up"/>
+<XEmbed url="https://x.com/SuperRabbitsDAO/status/1767123410407342332" width={400} height={400} style={{padding:'2em'}}  data-aos="slide-up"/>
+</div>
+
+
+<br></br><br></br>
+<div style={{ backgroundColor:'red', width:'100%' }}>
+  
+</div>
     <div id="partner"></div>
     <center>
       <div class="partnerus" style={{ 
@@ -469,6 +522,48 @@ function Home() {
 
 </center>
   <br></br><br></br><br></br>
+  <div id="about"></div>
+  <center>
+        <h1>
+        <b style={{color:'violet'}}>Empowering Web3 Brands to Drive Adoption</b></h1>
+        </center>
+        <br></br>
+    <center>
+      <div class="partnerus" style={{ 
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(5px)',
+  WebkitBackdropFilter: 'blur(5px)',
+  border: '1px solid rgba(90, 30, 212, 0.84)',color:'white',  textAlign: 'left'}} data-aos="slide-up" >
+      <div style={{margin:'2em'}}>
+        <center>
+     
+      <h2>
+  
+            About Us
+            </h2>
+            </center>
+        
+        
+        <br></br><br></br>
+At ConnectVerse, we are dedicated to accelerating Web3 adoption by providing brands with the tools and strategies they need to onboard both developers and users into their ecosystems seamlessly. Our mission is to bridge the gap between cutting-edge innovation and meaningful engagement, ensuring that projects in the decentralized space not only succeed but thrive in an increasingly complex and competitive market.
+<br></br><br></br><br></br>
+We understand that the future of Web3 lies in the strength and growth of its communities. That's why we focus on creating tailored strategies that enable Web3 brands to attract, engage, and retain top-tier developers while also growing a loyal and active user base. Whether it’s through specialized bootcamps, hands-on workshops, or immersive hackathons, ConnectVerse offers real-world experiences that foster collaboration, knowledge-sharing, and long-term participation within the Web3 ecosystem.
+<br></br><br></br><br></br>
+Our expertise lies in understanding the needs of both Web3 brands and the people who interact with them. By leveraging AI and data-driven insights, we provide highly personalized onboarding experiences that streamline the process for developers and users alike. These initiatives ensure that participants not only understand the technology but are also motivated to contribute to its success.
+<br></br><br></br><br></br>
+As a trusted partner to Web3 brands, ConnectVerse helps create vibrant, sustainable communities around innovative projects. Our goal is to cultivate environments where users and developers feel empowered, engaged, and excited about contributing to the decentralized future. Through education, hands-on experience, and strategic guidance, we ensure that our partners' ecosystems are positioned for long-term growth, scalability, and success.
+<br></br><br></br><br></br>
+At ConnectVerse, we are proud to be at the forefront of Web3 adoption, driving positive change by helping brands unlock their full potential in the decentralized world.
+</div>
+<a style={{height:'70%'}} href='https://t.me/connectverseweb3'><button style={{height:'70%'}} class="button-85" role="button">Join Our Community</button></a>
+<br></br><br></br><br></br><br></br><br></br>
+
+
+</div>
+
+</center>
+<br></br><br></br>
   <h2 style={{color:'white'}}>FAQs</h2>
       <br></br>
       <Accordion  className="custom-accordion" style={{background: 'rgba(90, 30, 212, 0.52)',
@@ -476,7 +571,7 @@ function Home() {
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
   backdropFilter: 'blur(5px)',
   WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)'}} data-aos="flip-up">
+  border: '1px solid rgba(90, 30, 212, 0.84)', width:'100%'}} data-aos="flip-up">
   <Accordion.Item eventKey="0" className="custom-accordion-item" style={{background: 'rgba(90, 30, 212, 0.52)',
   borderRadius: '16px',
   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
@@ -533,135 +628,7 @@ function Home() {
     </Accordion.Body>
   </Accordion.Item>
 </Accordion>
-<br></br><br></br><br></br>
-  <div id="about"></div>
-    <center>
-      <div class="partnerus" style={{ 
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(90, 30, 212, 0.84)',color:'white',  textAlign: 'left'}} data-aos="slide-up" >
-      <div style={{margin:'2em'}}>
-        <center>
-     
-      <h2>
-  
-            About Us
-            </h2>
-            </center>
-        <br></br> <br></br>
-        <center>
-        <h3>
-        <b style={{color:'violet'}}>Empowering Web3 Brands to Drive Adoption and Growth</b></h3>
-        </center>
-        <br></br><br></br>
-At ConnectVerse, we are dedicated to accelerating Web3 adoption by providing brands with the tools and strategies they need to onboard both developers and users into their ecosystems seamlessly. Our mission is to bridge the gap between cutting-edge innovation and meaningful engagement, ensuring that projects in the decentralized space not only succeed but thrive in an increasingly complex and competitive market.
-<br></br><br></br><br></br>
-We understand that the future of Web3 lies in the strength and growth of its communities. That's why we focus on creating tailored strategies that enable Web3 brands to attract, engage, and retain top-tier developers while also growing a loyal and active user base. Whether it’s through specialized bootcamps, hands-on workshops, or immersive hackathons, ConnectVerse offers real-world experiences that foster collaboration, knowledge-sharing, and long-term participation within the Web3 ecosystem.
-<br></br><br></br><br></br>
-Our expertise lies in understanding the needs of both Web3 brands and the people who interact with them. By leveraging AI and data-driven insights, we provide highly personalized onboarding experiences that streamline the process for developers and users alike. These initiatives ensure that participants not only understand the technology but are also motivated to contribute to its success.
-<br></br><br></br><br></br>
-As a trusted partner to Web3 brands, ConnectVerse helps create vibrant, sustainable communities around innovative projects. Our goal is to cultivate environments where users and developers feel empowered, engaged, and excited about contributing to the decentralized future. Through education, hands-on experience, and strategic guidance, we ensure that our partners' ecosystems are positioned for long-term growth, scalability, and success.
-<br></br><br></br><br></br>
-At ConnectVerse, we are proud to be at the forefront of Web3 adoption, driving positive change by helping brands unlock their full potential in the decentralized world.
-</div>
-<a style={{height:'70%'}} href='https://calendly.com/quantumworld394/30min'><button style={{height:'70%'}} class="button-85" role="button">Partner With Us</button></a>
-<br></br><br></br><br></br><br></br><br></br>
 
-<div class="partnerus"  style={{ 
-  
-  background: 'rgba(169, 18, 237, 0.49)',
-  borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-  backdropFilter: 'blur(5px)',
-  WebkitBackdropFilter: 'blur(5px)', // For Safari support
-  border: '1px solid rgba(169, 18, 237, 0.3)',color:'white',backgroundColor:'purple',  textAlign: 'left'}}  >
-    <br></br><br></br> <br></br><br></br> <br></br><br></br>
-    <h1 style={{color:'white'}}>Our Team </h1>
-    <br></br><br></br><br></br><br></br><br></br><br></br>
-<div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={founder}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Pranav Verma</b>
-    <br></br>
-    <l style={{color:'white'}}>Founder</l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img   style={{width:'10em',height:'12em'}} src={bd}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Venkatesh </b>
-    <br></br>
-    <l style={{color:'white'}}>BD Manager</l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={events}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Anirban Das</b>
-    <br></br>
-    <l style={{color:'white'}}>Head of Events</l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={CLB}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Raghavendra</b>
-    <br></br>
-    <l style={{color:'white'}}>Community Lead </l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={technology}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Shubhaam Tiwary</b>
-    <br></br>
-    <l style={{color:'white'}}>Head of Technology</l>
-    </center>
-    </div >
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={design}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Harsh Vaja</b>
-    <br></br>
-    <l style={{color:'white'}}>Head of Design</l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={advisor}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Manoj Jain</b>
-    <br></br>
-    <l style={{color:'white'}}>Advisor</l>
-    </center>
-    </div>
-    <div style={{border:'1px solid violet', margin:'2em',borderRadius:'5px'}} data-aos="flip-up">
-    <img  style={{width:'10em',height:'12em' }} src={founder}></img>
-    <br></br>
-    <center>
-    <b style={{color:'white'}}>Pranav Verma</b>
-    <br></br>
-    <l style={{color:'white'}}>Founder</l>
-    </center>
-    </div>
-    
-
-
-    </div>
-</div>
-
-</center>
-  <br></br>
-
-<br></br>
 
 
     <br></br>
@@ -681,7 +648,7 @@ At ConnectVerse, we are proud to be at the forefront of Web3 adoption, driving p
     
     <br></br>
     <br></br>
-<div id="about"></div>
+
 
     
     

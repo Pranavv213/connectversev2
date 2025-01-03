@@ -958,3 +958,26 @@ border: 1px solid rgba(255, 255, 255, 0.51);
   flex-wrap: wrap;
   
 }
+
+.specsContainer{
+  display:flex;
+  flex-direction: column;
+}
+
+.specs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.specstext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.xembed{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
