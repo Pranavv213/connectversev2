@@ -263,7 +263,7 @@ function Home() {
   gap: '1em' 
 }} data-aos="slide-up">
   
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -276,7 +276,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -290,7 +290,7 @@ function Home() {
     />
   </div>
   
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em'}} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -303,7 +303,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em'}} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -316,7 +316,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em'}} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -329,7 +329,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -342,7 +342,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -355,7 +355,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -368,7 +368,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -381,7 +381,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 
@@ -394,7 +394,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '8em', 
@@ -407,7 +407,7 @@ function Home() {
       alt="" 
     />
   </div>
-  <div style={{ textAlign: 'center', verticalAlign: 'middle', flex: '1 1 20%' }} data-aos="flip-up">
+  <div style={{ textAlign: 'center', verticalAlign: 'middle',width:'12em',height:'12em' }} data-aos="flip-up">
     <img 
       style={{ 
         width: '10em', 

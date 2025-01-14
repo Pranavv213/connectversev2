@@ -981,3 +981,9 @@ border: 1px solid rgba(255, 255, 255, 0.51);
   justify-content: center;
   flex-wrap: wrap;
 }
+.qwerty{
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
